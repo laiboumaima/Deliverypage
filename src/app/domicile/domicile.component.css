@@ -1,0 +1,60 @@
+.container {
+  margin-top: 2%;
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  background-color: #ffff;
+}
+
+.input-group {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-group .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-group .inputs .input-field {
+  padding: 1%;
+  margin: 1%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b4b4b4;
+  outline: none;
+  background: transparent;
+}
+
+.input-group .inputs .input-field:focus {
+  border-bottom: 1px solid #0053F0;
+}
+
+.input-group .inputs .input-def {
+  text-align: center;
+  margin-top: 1%;
+  margin: 1%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b4b4b4;
+  outline: none;
+  background: transparent;
+}
+
+.input-group .inputs .input-def:focus {
+  border-bottom: 1px solid #0053F0;
+}
+/*# sourceMappingURL=domicile.component.css.map */

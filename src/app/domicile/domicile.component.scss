@@ -1,0 +1,48 @@
+@import "../styles/colors";
+@mixin cartstyle {
+    border: 1px solid $gray;
+    border-radius: 8px;
+    background-color: $white;
+}
+
+.container {
+    margin-top: 2%;
+    @include cartstyle();
+}
+
+.input-group {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        .input-field {
+            padding: 1%;
+            margin: 1%;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid $gray;
+            outline: none;
+            background: transparent;
+            &:focus {
+                border-bottom: 1px solid $blue;
+            }
+        }
+        .input-def {
+            text-align: center;
+            margin-top: 1%;
+            margin: 1%;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid $gray;
+            outline: none;
+            background: transparent;
+            &:focus {
+                border-bottom: 1px solid $blue;
+            }
+        }
+    }
+}
