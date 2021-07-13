@@ -1,1 +1,78 @@
-<p>point-de-livraison works!</p>
+<div class="container my-2 ">
+    <div class="row justify-content-between">
+        <a class="btn icon backbtn "><i class="fas fa-chevron-circle-left fa-lg"></i></a>
+        <div class="div">
+            <a class="btn icon" routerLink="/domicile"><i class="fas fa-shipping-fast fa-lg"></i></a>
+            <a class="btn icon " routerLink="/Livraison"><i class="fas fa-map-marked-alt fa-lg"></i></a>
+            <a class="btn icon" routerLink="/LivraisonVendeur"><i class="fas fa-store fa-lg"></i></a>
+        </div>
+        <a class="btn icon nextbtn"><i class="fas fa-chevron-circle-right fa-lg"></i></a>
+    </div>
+    <div class="row  auto justify-content-center ">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col-sm-offset-0 m-lg-2 m-md-2 cart ">
+
+            <form id=" " action=" " class="input-group ">
+                <div class="inputs col-md-12 col-sm-12 col-lg-12 ">
+
+
+
+
+                    <input type="text " class="input-field " name="Telephone " placeholder=" Telephone " required>
+                    <input type="email " class="input-field " name="Email " placeholder="Email " required>
+                    <input type="text " class="input-field " name="phoneN " placeholder="Phone number " required>
+                    <input type="text " class="input-field " name="gps " placeholder="Link GPS " required>
+
+
+                    <div class="row justify-content-center ">
+                        <!-------point livriason-->
+
+                        <input type="text " name="options " class="input-def col-md-7 " list="options " style="width: max-content;" placeholder="Point de Livriason " />
+                        <datalist id="options ">
+                                <option value="livraison1 ">livraison1</option>
+                                <option value="livraison2 ">livraison2</option>
+                                <option value="livraison3 ">livraison3</option>
+                              
+                                </datalist>
+
+
+                        <!-------point livriason-->
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <!----button-->
+                <div class="buttons my-2 ">
+                    <button class="btn my-2 btnS ">Payer</button>
+
+
+                    <!----button-->
+
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="d-flex flex-column m-0  ">
+            <div class=" mt-2 d-flex row">
+                <i class="fas fa-stopwatch fa-lg mr-1 darken"></i>
+                <p class="mx-1">Délai de la livraison approximatif</p>
+                <b class="darken">10 jours</b>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>

@@ -12,6 +12,9 @@
     &:hover {
         color: $blue;
     }
+    i:hover {
+        cursor: pointer;
+    }
 }
 
 .btn {

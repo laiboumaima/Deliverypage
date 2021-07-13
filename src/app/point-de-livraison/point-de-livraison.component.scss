@@ -1,0 +1,102 @@
+@import "../styles/colors";
+@mixin cartstyle {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: $white;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.cart {
+    @include cartstyle();
+    div {
+        margin-top: 2%;
+    }
+}
+
+.input-group {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        .input-field {
+            padding: 1%;
+            margin: 1%;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid $gray;
+            outline: none;
+            background: transparent;
+            &:focus {
+                border-bottom: 1px solid $blue;
+            }
+        }
+        .input-def {
+            text-align: center;
+            margin-top: 1%;
+            margin: 1%;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid $gray;
+            outline: none;
+            background: transparent;
+            &:focus {
+                border-bottom: 1px solid $blue;
+            }
+        }
+    }
+}
+
+.btnS {
+    color: $white;
+    background-color: $blue;
+    &:hover {
+        background-color: $white;
+        color: $blue;
+        border: 1px solid $blue;
+    }
+}
+
+.backbtn {
+    &:hover ::after {
+        color: $blue;
+        margin-left: 2px;
+        content: "retour à la page de commande";
+    }
+    i:hover {
+        color: $blue;
+    }
+}
+
+.nextbtn {
+    &:hover ::after {
+        margin-right: 1px;
+        color: $blue;
+        content: "aller à la page de paiement";
+        float: left;
+    }
+    i:hover {
+        color: $blue;
+        float: right;
+    }
+}
+
+.icon {
+    i:hover {
+        color: $blue;
+    }
+}
+
+.iconwatch {
+    color: $blue;
+}
+
+.darken {
+    color: darken($color: $blue, $amount: 20%);
+}

@@ -1,13 +1,19 @@
 @import "../styles/colors";
 @mixin cartstyle {
-    border: 1px solid $gray;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background-color: $white;
 }
 
 .container {
     margin-top: 2%;
+}
+
+.cart {
     @include cartstyle();
+    div {
+        margin-top: 2%;
+    }
 }
 
 .input-group {
@@ -45,4 +51,52 @@
             }
         }
     }
+}
+
+.btnS {
+    color: $white;
+    background-color: $blue;
+    &:hover {
+        background-color: $white;
+        color: $blue;
+        border: 1px solid $blue;
+    }
+}
+
+.backbtn {
+    &:hover ::after {
+        color: $blue;
+        margin-left: 2px;
+        content: "retour à la page de commande";
+    }
+    i:hover {
+        color: $blue;
+    }
+}
+
+.nextbtn {
+    &:hover ::after {
+        margin-right: 1px;
+        color: $blue;
+        content: "aller à la page de paiement";
+        float: left;
+    }
+    i:hover {
+        color: $blue;
+        float: right;
+    }
+}
+
+.icon {
+    i:hover {
+        color: $blue;
+    }
+}
+
+.iconwatch {
+    color: $blue;
+}
+
+.darken {
+    color: darken($color: $blue, $amount: 20%);
 }
