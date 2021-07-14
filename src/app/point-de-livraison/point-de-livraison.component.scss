@@ -39,7 +39,6 @@
         .input-def {
             text-align: center;
             margin-top: 1%;
-            margin: 1%;
             border-top: 0;
             border-left: 0;
             border-right: 0;
@@ -99,4 +98,12 @@
 
 .darken {
     color: darken($color: $blue, $amount: 20%);
+}
+
+agm-map {
+    height: 300px;
+}
+
+.active {
+    color: $blue;
 }

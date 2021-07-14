@@ -1,8 +1,17 @@
+@charset "UTF-8";
 .container {
   margin-top: 2%;
-  border: 1px solid #b4b4b4;
+}
+
+.cart {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background-color: #ffff;
+}
+
+.cart div {
+  margin-top: 2%;
 }
 
 .input-group {
@@ -56,5 +65,54 @@
 
 .input-group .inputs .input-def:focus {
   border-bottom: 1px solid #0053F0;
+}
+
+.btnS {
+  color: #ffff;
+  background-color: #0053F0;
+}
+
+.btnS:hover {
+  background-color: #ffff;
+  color: #0053F0;
+  border: 1px solid #0053F0;
+}
+
+.backbtn:hover ::after {
+  color: #0053F0;
+  margin-left: 2px;
+  content: "retour à la page de commande";
+}
+
+.backbtn i:hover {
+  color: #0053F0;
+}
+
+.nextbtn:hover ::after {
+  margin-right: 1px;
+  color: #0053F0;
+  content: "aller à la page de paiement";
+  float: left;
+}
+
+.nextbtn i:hover {
+  color: #0053F0;
+  float: right;
+}
+
+.icon i:hover {
+  color: #0053F0;
+}
+
+.iconwatch {
+  color: #0053F0;
+}
+
+.darken {
+  color: #00308a;
+}
+
+.active {
+  color: #0053F0;
 }
 /*# sourceMappingURL=domicile.component.css.map */

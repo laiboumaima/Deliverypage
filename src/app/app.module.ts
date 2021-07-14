@@ -9,6 +9,9 @@ import { PointDeLivraisonComponent } from './point-de-livraison/point-de-livrais
 import { PointLivraisonVendeurComponent } from './point-livraison-vendeur/point-livraison-vendeur.component';
 import { DeliveryfirstpageComponent } from './deliveryfirstpage/deliveryfirstpage.component';
 
+import { AgmCoreModule } from '@agm/core'; 
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -22,7 +25,12 @@ import { DeliveryfirstpageComponent } from './deliveryfirstpage/deliveryfirstpag
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    RouterModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDxNZOxQbEl4VQmcYETchKoHAcXCC-AlpE'
+    })
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

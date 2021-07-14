@@ -100,3 +100,7 @@
 .darken {
     color: darken($color: $blue, $amount: 20%);
 }
+
+.active {
+    color: $blue;
+}

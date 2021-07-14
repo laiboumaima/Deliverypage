@@ -2,7 +2,7 @@
     <div class="row justify-content-between">
         <a class="btn icon backbtn "><i class="fas fa-chevron-circle-left fa-lg"></i></a>
         <div class="div">
-            <a class="btn icon" routerLink="/domicile"><i class="fas fa-shipping-fast fa-lg"></i></a>
+            <a class="btn icon" routerLink="/domicile"><i class="fas fa-shipping-fast fa-lg active"></i></a>
             <a class="btn icon " routerLink="/Livraison"><i class="fas fa-map-marked-alt fa-lg"></i></a>
             <a class="btn icon" routerLink="/LivraisonVendeur"><i class="fas fa-store fa-lg"></i></a>
         </div>
@@ -18,7 +18,7 @@
                     <div class="row justify-content-center ">
                         <!-------wilaya-->
 
-                        <input type="text " name="options " class="input-def col-md-4 " list="options " placeholder="Wilaya " />
+                        <input type="text " name="options " class="input-def col-md-4 " list="options " placeholder="Wilaya " required/>
                         <datalist id="options ">
                                 <option value="El-oued ">El-oued</option>
                                 <option value="Adrer ">Adrer</option>
@@ -32,7 +32,7 @@
 
                         <!------commune----->
 
-                        <input type="text " name="options " class="input-def col-md-4 " list="communes " placeholder="Commune " />
+                        <input type="text " name="options " class="input-def col-md-4 " list="communes " placeholder="Commune " required/>
                         <datalist id="communes ">
                             <option value="El-oued ">El-oued</option>
                             <option value="Robbah ">Robbah</option>
@@ -53,7 +53,6 @@
 
                     <input type="text " class="input-field " name="Telephone " placeholder=" Telephone " required>
                     <input type="email " class="input-field " name="Email " placeholder="Email " required>
-                    <input type="text " class="input-field " name="phoneN " placeholder="Phone number " required>
                     <input type="text " class="input-field " name="gps " placeholder="Link GPS " required>
                 </div>
 

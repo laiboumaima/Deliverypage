@@ -3,44 +3,47 @@
         <a class="btn icon backbtn "><i class="fas fa-chevron-circle-left fa-lg"></i></a>
         <div class="div">
             <a class="btn icon" routerLink="/domicile"><i class="fas fa-shipping-fast fa-lg"></i></a>
-            <a class="btn icon " routerLink="/Livraison"><i class="fas fa-map-marked-alt fa-lg"></i></a>
+            <a class="btn icon " routerLink="/Livraison"><i class="fas fa-map-marked-alt fa-lg active"></i></a>
             <a class="btn icon" routerLink="/LivraisonVendeur"><i class="fas fa-store fa-lg"></i></a>
         </div>
         <a class="btn icon nextbtn"><i class="fas fa-chevron-circle-right fa-lg"></i></a>
     </div>
-    <div class="row  auto justify-content-center ">
+    <div class="row  cart">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col-sm-offset-0 m-lg-2 m-md-2 cart ">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col-sm-offset-0  mt-4">
 
-            <form id=" " action=" " class="input-group ">
+            <form id=" " action=" " class="input-group m-0">
                 <div class="inputs col-md-12 col-sm-12 col-lg-12 ">
+                    <div class="row">
 
 
 
+                        <div class=" col-sm-12 px-4">
+                            <input type="text " class="input-field col-12" name="Telephone " placeholder=" Telephone " required>
+                            <input type="email " class="input-field col-12" name="Email " placeholder="Email " required>
 
-                    <input type="text " class="input-field " name="Telephone " placeholder=" Telephone " required>
-                    <input type="email " class="input-field " name="Email " placeholder="Email " required>
-                    <input type="text " class="input-field " name="phoneN " placeholder="Phone number " required>
-                    <input type="text " class="input-field " name="gps " placeholder="Link GPS " required>
+                            <!-------point livriason-->
+                            <div class="m-0 d-flex justify-content-center">
 
-
-                    <div class="row justify-content-center ">
-                        <!-------point livriason-->
-
-                        <input type="text " name="options " class="input-def col-md-7 " list="options " style="width: max-content;" placeholder="Point de Livriason " />
-                        <datalist id="options ">
-                                <option value="livraison1 ">livraison1</option>
-                                <option value="livraison2 ">livraison2</option>
-                                <option value="livraison3 ">livraison3</option>
-                              
-                                </datalist>
+                                <input type="text " name="options " class="input-def col-md-7 col-sm-7 mx-2 " list="options " style="width: max-content;" placeholder="Point de Livriason " />
+                            </div>
+                            <datalist id="options ">
+                            <option value="livraison1 ">livraison1</option>
+                            <option value="livraison2 ">livraison2</option>
+                            <option value="livraison3 ">livraison3</option>
+                          
+                            </datalist>
 
 
-                        <!-------point livriason-->
+                            <!-------point livriason-->
+                        </div>
+
 
 
 
                     </div>
+
+
 
 
 
@@ -56,7 +59,24 @@
                 </div>
             </form>
         </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 mt-2  ">
+            <!------------------map-->
+            <div id="map">
 
+                <agm-map [latitude]='lat' [longitude]='long'>
+
+                    <agm-marker [latitude]="lat" [longitude]="long">
+                    </agm-marker>
+
+                </agm-map>
+                <div class="col-12 d-flex justify-content-center ">
+                    <a href="#" class="stretched-link">localisation de point de livraison</a>
+                </div>
+            </div>
+            <!-------map-->
+
+
+        </div>
 
 
 
